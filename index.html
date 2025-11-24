@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO : titre clair + mot-clé principal -->
+    <title>Memlenz — Développeur Web | Sites Performants, Design & SEO</title>
+
+    <!-- SEO : Meta description optimisée -->
+    <meta name="description" content="Développeur web basé au Bénin. Création de sites professionnels rapides, modernes et optimisés SEO. Design sur mesure, back-end Django, gestion d'emails professionnels.">
+
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Memlenz | Développeur Web">
+    <meta property="og:description" content="Développeur web sénior — Design, SEO, sites modernes et performants.">
+    <meta property="og:url" content="https://memlenz.com/">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span>Memlenz</span>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+          <span class="menu-icon"></span>
+        </button>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="container hero-inner">
+        <h1>Votre Vision, Sublimée en une Expérience Numérique d'Exception</h1>
+        <p>
+          Collaborez avec un développeur qui transforme vos idées ambitieuses en sites web époustouflants et performants. Chaque détail conçu exclusivement pour votre marque, captivant votre audience et générant des résultats concrets.
+        </p>
+        <a href="#contact" class="btn btn-primary">Donnons Vie à Votre Vision</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Des Expériences Web Sur Mesure</h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Expériences Web Personnalisées</h3>
+            <p>Votre entreprise mérite bien plus qu'un simple template. Je conçois des expériences numériques sur mesure qui reflètent la sophistication de votre marque et parlent directement à vos clients idéaux.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Design & Performance</h3>
+            <p>Le design exceptionnel rencontre la fonctionnalité parfaite. J'allie excellence esthétique et expérience utilisateur intuitive pour créer des sites brillamment performants sur tous les appareils.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Optimisation & Référencement</h3>
+            <p>De la navigation fluide aux animations captivantes au rendu premium et naturel, chaque élément est orchestré pour transformer vos visiteurs en clients fidèles tout en optimisant votre visibilité.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Partenariat Authentique</h3>
+            <p>Vos objectifs sont mon plan d'action. Je travaille en étroite collaboration avec vous du concept au lancement, avec une communication claire qui rend le parcours aussi satisfaisant que le résultat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Prêt à Créer Quelque Chose d'Extraordinaire ?</h2>
+        <p>
+          Entamons la conversation sur votre projet et explorons ensemble comment transformer votre vision en une expérience numérique qui vous distingue.
+        </p>
+        <a href="#contact" class="btn btn-secondary">Démarrer Votre Projet</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Votre Site Web d'Exception Commence Ici</h2>
+
+        <form class="contact-form" method="post" action="/contact">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Parlez-moi de votre projet</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <h3>Réseaux</h3>
+          <ul>
+            <li><a href="https://linkedin.com/in/memlenz">LinkedIn</a></li>
+            <li><a href="https://github.com/memlenz">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Légal</h3>
+          <ul>
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer-copy">© 2025 Memlenz. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+      // SCRIPT NAVBAR ACCESSIBLE
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav");
+
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", !expanded);
+
+        nav.classList.toggle("open");
+
+        // Animation icône hamburger → croix
+        toggle.classList.toggle("active");
+      });
+
+      // Fermer le menu au clic sur un lien (mobile)
+      document.querySelectorAll('.nav-list a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.classList.remove('active');
+        });
+      });
+    </script>
+  </body>
+</html>
