@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -27,11 +25,10 @@
 }
 
 body {
-  font-family: Mulish, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
   line-height: 1.7;
-  /* background: var(--bg); */
-  background-image: url("../img/background.jpeg");
+  background: var(--bg);
 }
 
 .container {
@@ -42,10 +39,13 @@ body {
 
 /* Header */
 .header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(var(--space-lg));
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .header-inner {
@@ -144,6 +144,7 @@ body {
     top: 73px;
     left: -100%;
     width: 100%;
+    background: white;
     flex-direction: column;
     padding: 2rem;
     transition: left 0.3s;
@@ -195,7 +196,7 @@ a:hover::after {
 /* HERO */
 .hero {
   padding: 8rem 0 6rem;
-  background: var(--secondary);
+  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
 }
 
 .hero-inner {
@@ -207,7 +208,7 @@ a:hover::after {
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
-  color: whitesmoke;
+  color: var(--secondary);
   line-height: 1.2;
   margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
@@ -259,6 +260,7 @@ a:hover::after {
 /* SERVICES */
 .services {
   padding: 6rem 0;
+  background: var(--bg);
 }
 
 .services h2 {
@@ -276,6 +278,7 @@ a:hover::after {
 }
 
 .service-card {
+  background: white;
   padding: 2.5rem;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -303,6 +306,7 @@ a:hover::after {
 .cta {
   padding: 6rem 0;
   background: var(--secondary);
+  color: white;
 }
 
 .cta-inner {
@@ -314,19 +318,18 @@ a:hover::after {
 .cta h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: whitesmoke;
 }
 
 .cta p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
   opacity: 0.9;
-  color: var(--text-light);
 }
 
 /* RÉALISATIONS */
 .realisations {
   padding: 6rem 0;
+  background: var(--bg);
 }
 
 .realisations h2 {
@@ -370,6 +373,7 @@ a:hover::after {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  background: white;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -468,6 +472,7 @@ a:hover::after {
     top: 73px;
     left: -100%;
     width: 100%;
+    background: white;
     transition: left 0.3s;
     border-bottom: 1px solid var(--border);
   }
