@@ -30,17 +30,4 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Réseaux sociaux (optionnel, pour indexation des profils) -->
-  <url>
-    <loc>https://linkedin.com/in/achafine</loc>
-    <lastmod>2025-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://github.com/memlenz</loc>
-    <lastmod>2025-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
