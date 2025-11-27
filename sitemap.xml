@@ -30,34 +30,6 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Projets/réalisations (liens externes) -->
-  <url>
-    <loc>https://site3memlenz.netlify.app/</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://site4memlenz.netlify.app/</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://contenu-de-mon-blog-assurances.pages.dev/</loc>
-    <lastmod>2025-11-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Mentions légales -->
-  <url>
-    <loc>https://memlenz.com/mentions-legales</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <!-- Réseaux sociaux (optionnel, pour indexation des profils) -->
   <url>
     <loc>https://linkedin.com/in/achafine</loc>
