@@ -4,56 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO : titre clair + mot-clé principal -->
-  <title>Memlenz — Développeur Web | Sites Performants, Design & SEO</title>
-
-  <!-- SEO : Meta description optimisée -->
+  <title>Memlenz — Digitalisation & Automatisation des PME au Bénin</title>
   <meta name="description"
-    content="Vous avez une activité sérieuse, mais elle est invisible en ligne ? Obtenez une présence officielle claire et crédible pour rassurer vos clients et partenaires. Solution clé en main, sans complexité technique.">
-
-  <!-- Open Graph pour réseaux sociaux -->
+    content="Memlenz aide les PME à structurer, sécuriser et automatiser leur système informatique. Réduisez les erreurs, gagnez du temps et boostez votre productivité. Basé à Cotonou, Bénin.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Memlenz | Votre Présence Officielle en Ligne">
+  <meta property="og:title" content="Memlenz — Digitalisation & Automatisation des PME">
   <meta property="og:description"
-    content="Transformez votre activité en une présence en ligne crédible et professionnelle. Solution simple, rapide et adaptée à votre réalité.">
+    content="Infrastructure IT, messagerie pro, automatisation et sites web pour PME. Basé à Cotonou, Bénin.">
   <meta property="og:url" content="https://memlenz.com/">
-  <!-- <meta property="og:image" content="./assets/images/og-image.jpg"> -->
-
-  <!-- style -->
   <link rel="icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
+
   <!-- HEADER -->
   <header class="header">
     <div class="container header-inner">
-      <div class="logo">
-        <span>Memlenz</span>
-      </div>
-      <button class="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-        <span class="menu-icon"></span>
+      <a href="#accueil" class="logo">Mem<span>lenz</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
       </button>
       <nav class="nav" aria-label="Navigation principale">
         <ul class="nav-list">
-          <!-- Liens de navigation -->
-          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#problemes">Problèmes</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#offres">Offres</a></li>
           <li><a href="#realisations">Réalisations</a></li>
-          <li><a href="#about">A propos</a></li>
+          <li><a href="#about">À propos</a></li>
           <li><a href="https://blog.memlenz.com">Blog</a></li>
-          <li>
-            <a href="mailto:achafine@gmail.com" aria-label="Envoyer un email">
-              <img src="assets/img/svg/email.svg" alt="Mail" class="nav-icon">
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com/chafineadebi" aria-label="Instagram">
-              <img src="assets/img/svg/insta.svg" alt="Instagram" class="nav-icon">
-            </a>
-          </li>
+          <li class="nav-cta"><a href="mailto:contact@memlenz.com" class="btn btn-primary">Audit Gratuit →</a></li>
         </ul>
       </nav>
     </div>
@@ -63,191 +49,547 @@
 
     <!-- HERO -->
     <section class="hero" id="accueil">
+      <div class="hero-bg"></div>
+      <div class="hero-grid-lines"></div>
       <div class="container hero-inner">
-        <h1>Votre Activité Mérite une Présence Officielle</h1>
-        <p>
-          Vous avez une activité sérieuse, mais quand on vous cherche sur Google, on ne trouve rien ?
-          <strong>Un site web n’est pas un luxe, c’est votre adresse officielle.</strong>
-          Je crée des présences en ligne claires, crédibles et adaptées à votre réalité, pour que vos clients et
-          partenaires vous prennent au sérieux dès la première seconde.
-        </p>
-        <a href="mailto:achafine@gmail.com" class="btn btn-primary">Obtenez Votre Présence Officielle</a>
+        <div class="hero-text">
+          <div class="hero-eyebrow">Cotonou, Bénin · PME & Entreprises</div>
+          <h1>Votre PME mérite un <em>vrai système</em> informatique</h1>
+          <p>Fini le chaos Excel, WhatsApp et les emails perdus. Nous structurons, sécurisons et automatisons votre
+            système IT pour que vous puissiez vous concentrer sur votre cœur de métier.</p>
+          <div class="hero-actions">
+            <a href="mailto:contact@memlenz.com" class="btn btn-primary">Demander un audit gratuit →</a>
+            <a href="#services" class="btn btn-outline">Nos services</a>
+          </div>
+          <div class="hero-proof">
+            <span class="hero-proof-label">Ce que nous faisons :</span>
+            <div class="hero-proof-badges">
+              <span class="badge">Infrastructure IT</span>
+              <span class="badge">Automatisation</span>
+              <span class="badge">Sites web</span>
+              <span class="badge">Messagerie pro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div style="position:relative; width:100%; max-width:440px;">
+            <div class="hero-dashboard">
+              <div class="dash-header">
+                <div class="dash-dots">
+                  <div class="dash-dot"></div>
+                  <div class="dash-dot"></div>
+                  <div class="dash-dot"></div>
+                </div>
+                <div class="dash-title">Tableau de bord entreprise</div>
+              </div>
+              <div class="dash-stats">
+                <div class="dash-stat">
+                  <div class="dash-stat-label">Erreurs évitées</div>
+                  <div class="dash-stat-value good">−87%</div>
+                </div>
+                <div class="dash-stat">
+                  <div class="dash-stat-label">Temps gagné / sem.</div>
+                  <div class="dash-stat-value accent">+12h</div>
+                </div>
+              </div>
+              <div class="dash-row">
+                <div class="dash-item">
+                  <div class="dash-icon" style="background:rgba(229,80,26,0.1);">📧</div>
+                  <div class="dash-item-info">
+                    <div class="dash-item-name">Messagerie professionnelle</div>
+                    <div class="dash-item-sub">contact@monentreprise.com</div>
+                  </div>
+                  <div class="dash-item-status status-ok">Actif</div>
+                </div>
+                <div class="dash-item">
+                  <div class="dash-icon" style="background:rgba(26,92,229,0.1);">📊</div>
+                  <div class="dash-item-info">
+                    <div class="dash-item-name">Automatisation paie</div>
+                    <div class="dash-item-sub">Bulletins générés auto.</div>
+                  </div>
+                  <div class="dash-item-status status-ok">Actif</div>
+                </div>
+                <div class="dash-item">
+                  <div class="dash-icon" style="background:rgba(229,80,26,0.1);">🌐</div>
+                  <div class="dash-item-info">
+                    <div class="dash-item-name">Site internet</div>
+                    <div class="dash-item-sub">monentreprise.com</div>
+                  </div>
+                  <div class="dash-item-status status-warn">En cours</div>
+                </div>
+              </div>
+            </div>
+            <div class="float-badge left">
+              <span style="font-size:16px;">✅</span> Sauvegarde centralisée
+            </div>
+            <div class="float-badge right">
+              <span style="font-size:16px;">⚡</span> Tâches automatisées
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLÈMES -->
+    <section class="problems" id="problemes">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Le constat</span>
+          <h2>Votre système actuel vous fait perdre du temps et de l'argent</h2>
+          <p>Ces problèmes sont courants dans les PME. Ils sont aussi évitables.</p>
+        </div>
+        <div class="problems-grid">
+          <div class="problem-card">
+            <div class="problem-icon">💬</div>
+            <h3>WhatsApp & emails personnels</h3>
+            <p>Les échanges importants se perdent dans des conversations mélangées. Aucune traçabilité, aucun
+              professionnalisme.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">📋</div>
+            <h3>Excel chaotique</h3>
+            <p>Des fichiers non sauvegardés, des formules cassées, des erreurs de saisie. Un rapport erroné peut coûter
+              cher.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🔓</div>
+            <h3>Accès non contrôlés</h3>
+            <p>Tout le monde a accès à tout. Aucune hiérarchie dans les permissions. Vos données sensibles sont
+              exposées.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🔁</div>
+            <h3>Tâches répétitives manuelles</h3>
+            <p>Bulletins de paie, rapports, factures — faits à la main chaque mois. Des heures perdues qui pourraient
+              être automatisées.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">💾</div>
+            <h3>Risques de perte de données</h3>
+            <p>Aucune sauvegarde structurée. Un ordinateur en panne, et c'est des mois de travail qui disparaissent.</p>
+          </div>
+          <div class="problem-card">
+            <div class="problem-icon">🌐</div>
+            <h3>Invisibilité en ligne</h3>
+            <p>Vos concurrents ont un site, vous avez Facebook. Vos clients potentiels ne peuvent pas vous trouver ni
+              vous croire sérieux.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- SERVICES -->
     <section class="services" id="services">
       <div class="container">
-        <h2>Une Présence en Ligne Adaptée à Votre Réalité</h2>
-
+        <div class="section-header">
+          <span class="tag">Nos solutions</span>
+          <h2>Un système complet, adapté à votre entreprise</h2>
+          <p>Du réseau interne à votre site internet, nous couvrons tous les besoins IT de votre PME.</p>
+        </div>
         <div class="services-grid">
+
           <article class="service-card">
-            <h3>Visibilité Instantanée</h3>
-            <p>Votre activité existe, mais elle est invisible en ligne. Je crée une page claire qui explique ce que vous
-              faites, pour que vos clients et partenaires vous trouvent facilement.</p>
+            <div class="service-num">01</div>
+            <h3>Infrastructure IT</h3>
+            <p>Nous construisons la base technique de votre entreprise : réseau local, postes configurés, accès
+              organisés.</p>
+            <ul class="service-list">
+              <li>Mise en place réseau interne (LAN)</li>
+              <li>Configuration des postes utilisateurs</li>
+              <li>Gestion des comptes et permissions</li>
+              <li>Organisation des accès sécurisés</li>
+            </ul>
           </article>
 
           <article class="service-card">
-            <h3>Contact Simplifié</h3>
-            <p>Fini les échanges perdus sur WhatsApp ou Facebook. Vos clients savent où vous trouver, et comment vous
-              contacter de manière professionnelle.</p>
+            <div class="service-num">02</div>
+            <h3>Messagerie Professionnelle</h3>
+            <p>Fini les emails Gmail personnels. Vos équipes communiquent sous votre domaine officiel, partout.</p>
+            <ul class="service-list">
+              <li>Emails avec votre domaine (contact@vous.com)</li>
+              <li>Configuration PC et smartphone</li>
+              <li>Sécurisation des comptes</li>
+              <li>Formation à l'usage</li>
+            </ul>
           </article>
 
           <article class="service-card">
-            <h3>Solution Clé en Main</h3>
-            <p>Pas de jargon technique, pas de complexité. Je m’occupe de tout, vous obtenez une présence en ligne prête
-              à l’emploi.</p>
+            <div class="service-num">03</div>
+            <h3>Gestion des Données</h3>
+            <p>Vos fichiers organisés, sauvegardés et accessibles par les bonnes personnes, au bon moment.</p>
+            <ul class="service-list">
+              <li>Organisation structurée des fichiers</li>
+              <li>Stockage centralisé</li>
+              <li>Sauvegarde et récupération</li>
+              <li>Accès par rôle et département</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-num">04</div>
+            <h3>Automatisation</h3>
+            <p>Vos tâches répétitives tournent seules. Paie, factures, rapports — générés automatiquement, sans erreur.
+            </p>
+            <ul class="service-list">
+              <li>Automatisation Excel avancée</li>
+              <li>Génération auto de bulletins et factures</li>
+              <li>Scripts sur mesure pour vos process</li>
+              <li>Réduction drastique des erreurs humaines</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-num">05</div>
+            <h3>Support & Maintenance</h3>
+            <p>Votre système est surveillé en continu. Un problème ? On intervient rapidement, avant que ça impacte
+              votre activité.</p>
+            <ul class="service-list">
+              <li>Assistance technique réactive</li>
+              <li>Surveillance proactive du système</li>
+              <li>Maintenance régulière</li>
+              <li>Suivi mensuel avec rapport</li>
+            </ul>
+          </article>
+
+          <!-- Web card -->
+          <article class="service-card web">
+            <div class="web-left">
+              <div class="service-num">06</div>
+              <h3>Sites Internet & Présence en Ligne</h3>
+              <p>Un site web professionnel qui vous représente et convertit vos visiteurs en clients. Nous concevons
+                aussi bien les vitrines que les plateformes complexes.</p>
+              <div class="web-tags">
+                <span class="web-tag">Site vitrine</span>
+                <span class="web-tag">Refonte</span>
+                <span class="web-tag">E-commerce</span>
+                <span class="web-tag">SEO</span>
+                <span class="web-tag">Blog</span>
+              </div>
+            </div>
+            <div class="web-right">
+              <div class="web-item">
+                <h4>Création de site</h4>
+                <p>Design sur mesure, rapide et optimisé pour mobile et Google.</p>
+              </div>
+              <div class="web-item">
+                <h4>Refonte de site</h4>
+                <p>Votre ancien site relooké et modernisé pour 2025 et au-delà.</p>
+              </div>
+              <div class="web-item">
+                <h4>Optimisation SEO</h4>
+                <p>Soyez trouvé sur Google par vos clients quand ils vous cherchent.</p>
+              </div>
+              <div class="web-item">
+                <h4>Maintenance web</h4>
+                <p>Votre site reste à jour, sécurisé et opérationnel en permanence.</p>
+              </div>
+            </div>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="cta">
-      <div class="container cta-inner">
-        <h2>Prêt à Être Trouvé et Pris au Sérieux ?</h2>
-        <p>
-          Votre activité mérite une présence officielle.
-          <strong>Prenons 10 minutes pour en discuter</strong> — sans engagement, juste pour voir comment je peux vous
-          aider.
-        </p>
-        <a href="mailto:achafine@gmail.com" class="btn btn-secondary">Discutons de Votre Présence</a>
+    <!-- OFFRES -->
+    <section class="pricing" id="offres">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Nos offres</span>
+          <h2>Des packs clairs, sans surprise</h2>
+          <p>Choisissez selon la taille et les besoins de votre entreprise.</p>
+        </div>
+        <div class="pricing-grid">
+
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-label">Starter</div>
+              <div class="pricing-price-row">
+                <span class="price-currency">FCFA</span>
+                <span class="pricing-price">100 000</span>
+              </div>
+              <p class="pricing-desc">Pour les petites entreprises qui veulent se structurer et paraître
+                professionnelles.</p>
+            </div>
+            <hr class="pricing-divider">
+            <ul class="check-list">
+              <li class="check-item">Installation réseau de base</li>
+              <li class="check-item">Création comptes utilisateurs</li>
+              <li class="check-item">Email professionnel (votre domaine)</li>
+              <li class="check-item">Organisation initiale des fichiers</li>
+            </ul>
+            <div class="pricing-cta">
+              <a href="mailto:contact@memlenz.com?subject=Pack Starter" class="btn btn-outline">Commencer →</a>
+            </div>
+          </div>
+
+          <div class="pricing-card featured">
+            <div>
+              <div class="pricing-label">Business <span class="pricing-badge">Populaire</span></div>
+              <div class="pricing-price-row">
+                <span class="price-currency">FCFA</span>
+                <span class="pricing-price">250 000</span>
+              </div>
+              <p class="pricing-desc">Pour les PME qui veulent gagner en efficacité et automatiser leurs tâches clés.
+              </p>
+            </div>
+            <hr class="pricing-divider">
+            <ul class="check-list">
+              <li class="check-item">Tout le pack Starter</li>
+              <li class="check-item">Organisation avancée des fichiers</li>
+              <li class="check-item">Automatisation Excel & tâches répétitives</li>
+              <li class="check-item">Sécurisation avancée des accès</li>
+            </ul>
+            <div class="pricing-cta">
+              <a href="mailto:contact@memlenz.com?subject=Pack Business" class="btn btn-outline">Commencer →</a>
+            </div>
+          </div>
+
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-label">Premium</div>
+              <div class="pricing-price-row">
+                <span class="pricing-price" style="font-size:30px;">Sur mesure</span>
+              </div>
+              <p class="pricing-desc">Pour les entreprises qui veulent un système complet, automatisé et maintenu.</p>
+            </div>
+            <hr class="pricing-divider">
+            <ul class="check-list">
+              <li class="check-item">Automatisation avancée (paie, reporting)</li>
+              <li class="check-item">Gestion complète des utilisateurs</li>
+              <li class="check-item">Infrastructure IT optimisée</li>
+              <li class="check-item">Support mensuel inclus</li>
+              <li class="check-item">Solutions adaptées à vos besoins</li>
+            </ul>
+            <div class="pricing-cta">
+              <a href="mailto:contact@memlenz.com?subject=Pack Premium" class="btn btn-primary">Nous contacter →</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="maintenance-box">
+          <div>
+            <h3>Abonnement Support & Maintenance</h3>
+            <p>Surveillance continue, assistance rapide, maintenance et améliorations régulières. Optionnel, mais
+              recommandé.</p>
+          </div>
+          <div class="maintenance-price">25 000 – 100 000 FCFA/mois</div>
+          <a href="mailto:contact@memlenz.com?subject=Maintenance" class="btn btn-outline">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAS D'USAGE -->
+    <section class="usecases" id="cas-usage">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Cas concrets</span>
+          <h2>Ce que nous avons déjà résolu</h2>
+        </div>
+        <div class="usecases-grid">
+
+          <div class="usecase-card large">
+            <div class="usecase-number">01</div>
+            <div class="usecase-body">
+              <span class="usecase-pill">⚡ Automatisation</span>
+              <h3>Génération automatique des bulletins de paie</h3>
+              <p>Une entreprise de 30 employés passait 3 jours par mois à faire les bulletins de paie manuellement dans
+                Excel. Erreurs fréquentes, retards, frustration. Après notre intervention : les bulletins sont générés
+                en 20 minutes, sans erreur, chaque mois.</p>
+            </div>
+          </div>
+
+          <div class="usecase-card">
+            <div class="usecase-number">02</div>
+            <span class="usecase-pill">📊 Excel</span>
+            <h3>Automatisation des rapports hebdomadaires</h3>
+            <p>Un responsable passait chaque lundi matin à consolider des données depuis 5 fichiers Excel différents.
+              Nous avons automatisé ce processus : le rapport se génère seul, fiable et en temps réel.</p>
+          </div>
+
+          <div class="usecase-card">
+            <div class="usecase-number">03</div>
+            <span class="usecase-pill">🏢 IT</span>
+            <h3>Structuration IT d'une PME en croissance</h3>
+            <p>Une PME de 15 personnes n'avait aucun réseau, chacun travaillait sur son propre laptop sans partage. Nous
+              avons mis en place un réseau local, des comptes utilisateurs et des emails professionnels.</p>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <!-- RÉALISATIONS -->
-    <section id="realisations" class="realisations">
+    <section class="portfolio" id="realisations">
       <div class="container">
-        <h2>Des Présences en Ligne Qui Parlent Pour Leurs Propriétaires</h2>
-        <div class="realisations-grid">
-          <!-- Carte 1 -->
-          <div class="card-container">
-            <div class="card">
-              <div class="card-front">
-                <img src="assets/img/site2.webp" alt="Mon site1 portfolio" class="card-image">
-                <h3>Projet 1 : Site Vitrine 1</h3>
-                <p>Un site moderne pour présenter constituer mon portfolio, avec un design néon futuriste et une couleur
-                  vive.</p><a class="btn" target="_blank" href="https://site4memlenz.netlify.app/">Visiter le site</a>
-              </div>
+        <div class="section-header">
+          <span class="tag">Réalisations</span>
+          <h2>Ce que nous avons créé</h2>
+        </div>
+        <div class="portfolio-grid">
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-placeholder">🎨</div>
+            <div class="portfolio-body">
+              <div class="portfolio-type">Site Vitrine</div>
+              <h3>Site portfolio Memlenz</h3>
+              <p>Design néon futuriste, ultra-rapide et optimisé pour les conversions.</p>
+              <a href="https://site4memlenz.netlify.app/" target="_blank" class="portfolio-link">Visiter le site →</a>
             </div>
           </div>
-          <!-- Carte 3 -->
-          <div class="card-container">
-            <div class="card">
-              <div class="card-front">
-                <img src="assets/img/blog1.webp" alt="Mon blog" class="card-image">
-                <h3>Blog d'Assurance</h3>
-                <p>Ce blog expliquait les produits d'assurance, mais manquait de visibilité. Aujourd’hui, il est
-                  référencé et consulté par des clients potentiels.</p><a class="btn" target="_blank"
-                  href="https://contenu-de-mon-blog-assurances.pages.dev/">Visiter le blog</a>
-              </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-placeholder">📰</div>
+            <div class="portfolio-body">
+              <div class="portfolio-type">Blog</div>
+              <h3>Blog d'Assurance</h3>
+              <p>Vulgarisation des produits d'assurance, optimisé SEO et consulté par des clients potentiels.</p>
+              <a href="https://contenu-de-mon-blog-assurances.pages.dev/" target="_blank" class="portfolio-link">Visiter
+                le blog →</a>
             </div>
           </div>
-          <!-- Carte 4 -->
-          <div class="card-container">
-            <div class="card">
-              <div class="card-front">
-                <img src="assets/img/blog2.webp" alt="Mon blog" class="card-image">
-                <h3>Projet 4 : Blog Personnel</h3>
-                <p>Mon blog personnel .</p><a class="btn" target="_blank" href="https://blog.memlenz.com/">Visiter mon
-                  Blog</a>
-              </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-img-placeholder">✍️</div>
+            <div class="portfolio-body">
+              <div class="portfolio-type">Blog Personnel</div>
+              <h3>Blog Memlenz</h3>
+              <p>Contenu tech & digital pour les entrepreneurs et PME d'Afrique de l'Ouest.</p>
+              <a href="https://blog.memlenz.com/" target="_blank" class="portfolio-link">Visiter le blog →</a>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-
-    <!-- ABOUT ME -->
+    <!-- ABOUT -->
     <section class="about" id="about">
       <div class="container about-inner">
-        <h2>Pourquoi Travailler Avec Moi ?</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>
-              Je m’appelle <strong>Châ-Fine Ayédoun ADEBI</strong>, et je comprends un problème simple :
-              <strong>votre activité est sérieuse, mais elle n’a pas l’air officielle en ligne.</strong>
-            </p>
-            <p>
-              Je ne crée pas des "sites web". Je mets en place des <strong>présences en ligne qui rassurent vos clients
-                et partenaires</strong>, sans complexité technique.
-              Mon objectif ? Que votre crédibilité ne dépende plus du hasard.
-            </p>
-            <p>
-              <strong>Concrètement</strong>, je vous livre :
-            <ul>
-              <li>Une page d’accueil qui explique clairement ce que vous faites,</li>
-              <li>Une présentation qui vous positionne comme un professionnel,</li>
-              <li>Un moyen de contact simple et fiable.</li>
-            </ul>
-            </p>
-            <a href="mailto:achafine@gmail.com" class="btn btn-primary">Discutons de Votre Présence Officielle</a>
+        <div class="about-left">
+          <span class="tag">Pourquoi nous ?</span>
+          <h2>Une approche terrain, pas théorique</h2>
+          <p>Je m'appelle <strong>Châ-Fine Ayédoun ADEBI</strong>. J'ai travaillé en entreprise et je connais les vrais
+            problèmes IT des PME locales — pas depuis un manuel, mais depuis le terrain.</p>
+          <p>Memlenz ne vend pas des services génériques. Nous analysons votre situation, identifions ce qui vous fait
+            perdre du temps et de l'argent, et nous le corrigeons avec des solutions concrètes et accessibles.</p>
+          <ul>
+            <li>Expérience réelle en entreprise</li>
+            <li>Solutions adaptées aux PME locales</li>
+            <li>Résultats mesurables, pas de jargon</li>
+            <li>Coût accessible vs grandes agences</li>
+            <li>Basé à Cotonou, disponible au Bénin</li>
+          </ul>
+          <a href="mailto:contact@memlenz.com" class="btn btn-primary">Discutons de votre projet →</a>
+        </div>
+        <div class="about-right">
+          <div class="about-stat">
+            <div class="about-stat-icon orange">🏢</div>
+            <div>
+              <h4>Présence Officielle</h4>
+              <p>Votre adresse digitale, claire et crédible auprès de vos clients et partenaires.</p>
+            </div>
           </div>
-          <div class="about-visual">
-            <div class="skills-timeline">
-              <div class="skill-item">
-                <span class="skill-icon">🏢</span>
-                <p><strong>Présence Officielle</strong><br>Votre adresse en ligne, claire et crédible.</p>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">🔍</span>
-                <p><strong>Visibilité</strong><br>Être trouvé par ceux qui vous cherchent.</p>
-              </div>
-              <div class="skill-item">
-                <span class="skill-icon">💬</span>
-                <p><strong>Contact Pro</strong><br>Un moyen simple pour vos clients de vous joindre.</p>
-              </div>
+          <div class="about-stat">
+            <div class="about-stat-icon blue">⚡</div>
+            <div>
+              <h4>Automatisation Concrète</h4>
+              <p>Chaque heure automatisée est une heure que vous consacrez à votre vrai métier.</p>
+            </div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-icon green">🔒</div>
+            <div>
+              <h4>Données Sécurisées</h4>
+              <p>Vos informations importantes sont organisées, sauvegardées et protégées.</p>
+            </div>
+          </div>
+          <div class="about-stat">
+            <div class="about-stat-icon orange">📞</div>
+            <div>
+              <h4>Support Réactif</h4>
+              <p>Un problème ? Nous intervenons rapidement pour minimiser l'impact sur votre activité.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <h2>Prêt à transformer votre système informatique ?</h2>
+        <p>Demandez un audit gratuit. Nous analysons votre situation et vous proposons un plan d'action concret — sans
+          engagement.</p>
+        <div class="cta-actions">
+          <a href="mailto:contact@memlenz.com?subject=Audit Gratuit" class="btn btn-white">Demander un audit gratuit
+            →</a>
+          <a href="https://linkedin.com/in/achafine" target="_blank" class="btn"
+            style="color:rgba(255,255,255,0.85); border: 1.5px solid rgba(255,255,255,0.3);">LinkedIn</a>
+        </div>
+        <p class="cta-info">contact@memlenz.com · Cotonou, Bénin</p>
+      </div>
+    </section>
+
   </main>
+
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <h3>Réseaux</h3>
-        <ul>
-          <li><a href="https://linkedin.com/in/achafine">LinkedIn</a></li>
-          <li><a href="https://github.com/memlenz">GitHub</a></li>
-        </ul>
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo">Mem<span>lenz</span></div>
+          <p class="footer-desc">Digitalisation & automatisation des PME au Bénin. Nous structurons votre système IT
+            pour vous faire gagner du temps et de la crédibilité.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Infrastructure IT</a></li>
+            <li><a href="#services">Messagerie Pro</a></li>
+            <li><a href="#services">Automatisation</a></li>
+            <li><a href="#services">Sites Internet</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="https://blog.memlenz.com">Blog</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#offres">Nos offres</a></li>
+            <li><a href="#about">À propos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@memlenz.com">contact@memlenz.com</a></li>
+            <li><a href="https://linkedin.com/in/achafine">LinkedIn</a></li>
+            <li><a href="https://github.com/memlenz">GitHub</a></li>
+            <li><a href="https://instagram.com/chafineadebi">Instagram</a></li>
+          </ul>
+        </div>
       </div>
-
-      <div>
-        <h3>Légal</h3>
-        <ul>
-          <li><a href="#">Mentions légales</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Memlenz. Tous droits réservés.</p>
+        <p class="footer-copy">Cotonou, Bénin</p>
       </div>
     </div>
-
-    <p class="footer-copy">© 2025 Memlenz. Tous droits réservés.</p>
   </footer>
 
   <script>
-    // SCRIPT NAVBAR ACCESSIBLE
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".nav");
-
-    toggle.addEventListener("click", () => {
-      const expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", !expanded);
-
-      nav.classList.toggle("open");
-
-      // Animation icône hamburger → croix
-      toggle.classList.toggle("active");
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('open');
     });
-
-    // Fermer le menu au clic sur un lien (mobile)
     document.querySelectorAll('.nav-list a').forEach(link => {
       link.addEventListener('click', () => {
         nav.classList.remove('open');
         toggle.setAttribute('aria-expanded', 'false');
-        toggle.classList.remove('active');
       });
     });
   </script>
